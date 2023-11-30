@@ -91,3 +91,11 @@
     right: 18px;
   }
 }
+
+.form-contacts__input:invalid:not(:placeholder-shown):not(:focus) {
+  outline: 2px solid $color-error;
+}
+
+.form-contacts__input:invalid:not(:placeholder-shown):not(:focus) + .form-contacts__icon {
+  background-color: $color-error;
+}
